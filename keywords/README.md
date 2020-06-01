@@ -6,3 +6,5 @@ The user is supposed to select any one out of those listed videos based on index
 You can also try with other datasets, you just have to change the name of cvs file
  recipes=pd.read_csv("Vid.csv")
 Make sure you change the name of the columns as required
+
+Currently, we have taken the entire video description and extracted the keywords. We are working on extracting keywords based on the time interval.
