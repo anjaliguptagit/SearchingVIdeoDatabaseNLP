@@ -1,1 +1,1 @@
-This folder contains the transcripts obtained after applying the model on the sample audio clips.
+This folder contains mutiple folders containing transcripts of 5 min audio clip segments for each video.
