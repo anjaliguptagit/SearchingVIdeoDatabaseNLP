@@ -4,7 +4,7 @@
 
 'split_audio.py' takes the audio files from the 'audio_files' folder and splits them into 5 minute segments each.
 
-'deepspeech_model_exec.py' implements the DeepSpeech pre-trained Speech Recognition model to convert the 5 minute audio segments from each audio to text files.
+'deepspeech_model_exec.py' implements the DeepSpeech pre-trained Speech Recognition model to convert the 5 minute audio segments from each audio to text files and stores it in 'text_files' folder.
 
 'text_to_sheet.py' converts the text files into csv file to be stored in Keywords folder for further processing.
 
