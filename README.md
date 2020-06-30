@@ -7,3 +7,5 @@
 'deepspeech_model_exec.py' implements the DeepSpeech pre-trained Speech Recognition model to convert the 5 minute audio segments from each audio to text files.
 
 'keywords' folder contains the algorithm for extracting the keywords from the entire video transcript. We are working on extracting keywords based on the time interval.
+
+'front_end' folder contains the webpage that will be used to 
