@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun May 31 16:55:33 2020
-
-@author: Shwetha
-"""
 from __future__ import division
 from collections import defaultdict
 import numpy as np 
@@ -36,7 +30,7 @@ def funrake(Text):
     for word in POS_tag:
         if word[1] not in wanted_POS:
             stopwords.append(word[0])
-    stopword_file = open("stopwords.txt", "r")
+    stopword_file = open("/media/anjali/0EFF08340EFF0834/SpeechRecog_ubuntu/Keywords/stopwords.txt", "r")
     lots_of_stopwords = []
     for line in stopword_file.readlines():
         lots_of_stopwords.append(str(line.strip()))
