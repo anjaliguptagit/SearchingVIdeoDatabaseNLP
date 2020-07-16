@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+	<title>Searching Video Using NLP</title>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<style type = "text/css">
+	body { background: linear-gradient(to bottom, #ccccff 0%, #ff99cc 100%);}
+	.title{ margin: 45px; 
+		padding: 20px;
+		background-color: pink; 
+		border-style:solid; 
+		text-align: center;
+		font-size: 40px;
+		font: bold;
+		font-family: Alegreya;
+	}
+	input[type=text] {font-size: 25px; text-align: center; padding: 10px; transform: translate(300px, 12px);}
+	input[type=submit] {font-size: 17px; text-align: center; padding: 10px; transform: translate(655px, 12px);}
+}
+	
+</style>
+</head>
+<body>
+	<p class="title">Searching A Video Database Using Natural Language Query</p>
+	<form action = "results.html" method = "POST">
+		{% csrf_token %}
+		<p> <input type="text" name = "query" size="50" placeholder="Search"> </p>
+		<p> <input type="submit" size="10" value="Submit"> </p>
+	</form>
+</body>
+</html>

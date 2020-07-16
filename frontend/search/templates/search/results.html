@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Searching Video Using NLP</title>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<style type = "text/css">
+	body { background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); z-index:4; text-align: center;}
+	.title{ margin: 45px; 
+		padding: 20px;
+		background-color: pink; 
+		border-style:solid; 
+		text-align: center;
+		font-size: 40px;
+		font: bold;
+		font-family: Alegreya;
+	}
+	
+	#container { class="boxed" style="background-color: #80d4ff; width: 50%";}
+	#name { font-size: 25px; font-family: Alegreya; background-color: #ffcccc; width: 50%; margin: auto;}
+	
+}
+	
+</style>
+</head>
+<body>
+	<p class="title">Searching A Video Database Using Natural Language Query</p>
+	{% for key,value in res.items%}
+	<div id="container">
+		<p> 
+			<video width='520' height= '340' controls>
+				{% load static %}
+				<source src="{% static value %}" type='video/mp4'>
+			</video>
+			<br/>
+			<div id="name"> {{ key }} </div>
+		</p>
+	</div>
+	{% endfor %} 
+	
+</body>
+</html>
