@@ -2,7 +2,7 @@
 
 Lecture videos are recorded by universities so that they can be used by students to review the courses later. However, usually the lectures are very long, poorly labelled and the required content is hard to find. Specially, sometimes the students want to review a particular topic and its hard to find the lecture and the exact place that it was covered. So, we extract the videos based on the query and find the segment from video that has that keyword.
 
-We have used a pre-trained Speech Recognition model for getting the transcript from the input query and the segmented audio from the NPTEL videos. We filtered it to extract the keywords and also filter the input query transcript to get its keywords. We compared them and got the videos and the time interval depending on the given input query. We have integrated the webpage with the python scripts to display the results after giving query.
+We have used a pre-trained Speech Recognition model 'DeepSpeech' (https://github.com/mozilla/DeepSpeech) for getting the transcript from the input query and the segmented audio from the NPTEL videos. We filtered it to extract the keywords and also filter the input query transcript to get its keywords. We compared them and got the videos and the time interval depending on the given input query. We have integrated the webpage with the python scripts to display the results after giving query.
 
 'vid_to_aud.py' is the python file that takes the videos from a folder named 'video_files', it converts them to audio files with .wav extension and saves it in 'audio_files' folder.
 
