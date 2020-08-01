@@ -14,7 +14,7 @@ from nltk.stem.porter import PorterStemmer
 import imutils
 import rake
 
-topics=pd.read_csv("/media/anjali/0EFF08340EFF0834/SpeechRecog_ubuntu/Keywords/Vid2.csv")
+topics=pd.read_csv("/media/anjali/0EFF08340EFF0834/SpeechRecog_ubuntu/Keywords/Vid.csv")
 words = []
 n=len(topics['Description'])
 
@@ -60,8 +60,12 @@ for i in range(1, len(sys.argv)):
 	input_keyword += (sys.argv[i] + ' ')
 title_list = list(search(input_keyword)['Title'][0:5])
 
-for title in title_list:
-	name = title.split("/")[1]
-	duration = int((title.split("/")[2]).split(".")[0])
-	start_time = duration*5
-	print(f'{name:70}', start_time,"-", start_time+5, "mins\n")
+file1 = open("result.txt","w")
+  
+# \n is placed to indicate EOL (End of Line) 
+for line in title_list:
+	line = (line[11:-4])
+	file1.write(line+".mp4"+"\n") 
+
+file1.close()
+
